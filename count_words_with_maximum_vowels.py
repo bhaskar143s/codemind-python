@@ -17,4 +17,3 @@ for i in z:
     if ma==c:
         x+=1
 print(x)
-    

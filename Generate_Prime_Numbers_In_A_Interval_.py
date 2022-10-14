@@ -1,12 +1,13 @@
-a = int (input())
-b = int (input())
-s=0
-for i in range(a,b+1):
-    c=0
-    for j in range(2,i):
-        if i%j==0:
-            c=1
-            break
-    if c==0:
-        if i!=1:
-            print(i)
+def prime(n):
+    if(n==1):
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if(n%i==0):
+            return 0
+    return 1
+n=int(input())
+m=int(input())
+for i in range(n,m+1):
+    if(prime(i)):
+        print(i,end="
+")

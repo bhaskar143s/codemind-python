@@ -1,32 +1,14 @@
 s=input()
-x=len(s)
-c=v=z=w=0
+s=s.lower()
+a=[]
 b=[]
-for i in range(x):
-    c=0
-    if s[i]==" ":
+for i in range(len(s)):
+    if s[i]==' ':
         continue
-    else:
-        if s[i].upper() not in b and s[i].lower() not in b:
-            if s[i].islower():
-                b.append(s[i])
-v=len(b)
-b.sort()
-for i in range(v):
-    print(b[i],end="")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if s.count(s[i])==1:
+        a.append(s[i])
+b=sorted(a)
+for i in b:
+    print(i,end='')
 
 

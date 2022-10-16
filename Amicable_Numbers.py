@@ -1,15 +1,14 @@
-n=int(input())
-m=int(input())
-p=0
-
+a=int(input())
+b=int(input())
 s=0
-for i in range(1,n):
-    if(n%i==0):
+s1=0
+for i in range(1,a):
+    if a%i==0:
         s=s+i
-for j in range(1,m):
-    if(m%j==0):
-        p=p+j
-if(p==n and s==m):
+for j in range(1,b):
+    if b%j==0:
+        s1=s1+j
+if b==s and a==s1:
     print("Amicable")
 else:
     print("Not Amicable")
